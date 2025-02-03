@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" style="height: 100%;">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    
+    <title>NoteCloud</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Cuberto mouseFollower -->
+    <link rel="stylesheet" href="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.css">
+    <script src="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.js"></script>
+  </head>
+  <body class="body" style="height: 100%;">
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    
+    <!-- Font Awesome JS Link -->
+    <script src="https://kit.fontawesome.com/d4ccbf4a19.js" crossorigin="anonymous"></script>
+    <!-- BootStrap JS Link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <!-- Cuberto mouseFollower -->
+    <script>
+      const cursor = new MouseFollower({
+    el: null,
+    container: document.body,
+    className: 'mf-cursor',
+    innerClassName: 'mf-cursor-inner',
+    textClassName: 'mf-cursor-text',
+    mediaClassName: 'mf-cursor-media',
+    mediaBoxClassName: 'mf-cursor-media-box',
+    iconSvgClassName: 'mf-svgsprite',
+    iconSvgNamePrefix: '-',
+    iconSvgSrc: '',
+    dataAttr: 'cursor',
+    hiddenState: '-hidden',
+    textState: '-text',
+    iconState: '-icon',
+    activeState: '-active',
+    mediaState: '-media',
+    stateDetection: {
+        '-pointer': 'a,button',
+        '-hidden': 'iframe'
+    },
+    visible: true,
+    visibleOnState: false,
+    speed: 0.6,
+    ease: 'expo.out',
+    overwrite: true,
+    skewing: 10,
+    skewingText: 4,
+    skewingIcon: 4,
+    skewingMedia: 4,
+    skewingDelta: 0.001,
+    skewingDeltaMax: 0.15,
+    stickDelta: 0.15,
+    showTimeout: 20,
+    hideOnLeave: true,
+    hideTimeout: 300,
+    hideMediaTimeout: 300
+})
+// Some elements have explicitly made curser: none to show just the the cuberto curser and hide the real cursor
+    </script>
+  </body>
+</html>
